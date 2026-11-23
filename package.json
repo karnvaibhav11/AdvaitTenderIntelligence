@@ -1,0 +1,36 @@
+{
+  "name": "advait-tender-intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "verify": "tsx scripts/verify.ts",
+    "ingest:docs": "tsx scripts/ingest-documents.ts",
+    "verify:docs": "tsx scripts/verify-documents.ts",
+    "verify:security": "tsx scripts/verify-security.ts",
+    "verify:ai": "tsx scripts/verify-ai.ts",
+    "benchmark:generate": "tsx scripts/generate-golden.ts",
+    "eval:tools": "tsx scripts/eval-ai.ts",
+    "eval:ai": "tsx scripts/eval-ai.ts --llm",
+    "audit:data": "tsx scripts/data-quality.ts"
+  },
+  "dependencies": {
+    "csv-parse": "^7.0.3",
+    "lucide-react": "^0.468.0",
+    "next": "^16.0.0",
+    "openai": "^7.62.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "unpdf": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.0.0"
+  }
+}
